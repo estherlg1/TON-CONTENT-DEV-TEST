@@ -2,30 +2,67 @@
 Campaign Page styling CSS
 ******************************************************/
 @font-face {
-    font-family: Body-WebS;
-    src: url(/styles/font/THEOUTNET-Body-WebXL.woff);
+  font-family: Body-WebS;
+  src: url(/styles/font/THEOUTNET-Body-WebXL.woff);
 }
 
-html, button, input, select, textarea,
-    .pure-g [class *= "pure-u"] {
-      font-family: Body-WebS;
-    }
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+  font-family: Body-WebS;
+}
 
 body {
   max-width: 960px;
   margin: 0 auto;
   font-family: 'Body-WebS', arial;
+}
+
+.container {
   padding: 0 15px;
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-weight: normal;
-  font-size: 2em;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-bottom: 0.25em;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 0.6em;
+}
+
+h4 {
+  font-size: 0.9em;
+  margin: 0 0 60px;
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 1em;
+  margin-top: 0;
 }
 
 p {
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: 1.15em;
+  line-height: 1.4em;
+}
+
+button {
+  padding: 0.6em 0;
+  margin: 5px 0;
+  width: 85%;
+  font-size: 1.1em;
+  border: 1px solid #000;
+  background-color: #fff;
+  letter-spacing: 0.05em;
 }
 
 .logo {
@@ -39,10 +76,14 @@ p {
   text-align: center;
 }
 
+.bottom-margin {
+  margin-bottom: 30px;
+}
+
 .pure-g > div {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .pad-box {
@@ -58,6 +99,33 @@ p {
   color: #fff;
   font-size: 1.5em;
   margin: 0 18%;
+}
+
+.tile-container {
+  padding: 0 0.33em;
+  margin-bottom: 2em;
+}
+
+.feature-text-container {
+  margin: 0 15px;
+}
+
+.YMAL {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.YMAL-heading {
+  padding: 1em;
+}
+
+.bottom-heading {
+  background-color: #fff;
+  width: 90%;
+  left: 5%;
+  position: absolute;
+  top: 86%;
 }
 
 @media all and (min-width: 320px) {
